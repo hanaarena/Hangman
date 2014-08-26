@@ -1,0 +1,52 @@
+<!-- hanaarena/Hangman - Lanz
+	 https://github.com/hanaarena/Hangman
+ -->
+<!DOCTYPE html>
+<html>
+<head></head>
+<title>Hangman</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+<link rel="stylesheet" type="text/css" href="statics/task2.css">
+<link rel="stylesheet" type="text/css" href="statics/animate.css">
+<script type="text/javascript" src="statics/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="statics/words.js"></script>
+<script type="text/javascript" src="statics/underscore.js"></script>
+<script type="text/javascript" src="statics/hangman.js"></script>
+<script type="text/javascript" src="statics/init.js"></script>
+<script>
+</script>
+<body>
+	<div id="container">
+			
+			<br />
+			<div id="menu">
+				<ul>
+					<!-- <li><div id="initgame" onclick="asd();">Start Game</div></li> -->
+					<li><div id="wordstoguess" style="display:none"></div>
+				</ul>	
+			</div>
+			
+			<br><br>
+			<div class="status">Game Status : <span id="output"></span></div>
+						
+			<div id="wrapper">
+				<ul>
+					<li id="newWords">Words List :<br><textarea rows="15" cols="40"></textarea></li>
+					<li id="history">Guessed Words :<br><textarea rows="15" cols="40"></textarea></li>
+				</ul>
+			</div>	
+			<div id="results">
+				<ul>
+					<li><div id="result" onclick="getResult();">Get Result</div></li>
+					<li><div id="submit" onclick="submit();">Submit</div></li>
+				</ul>
+			</div>		
+		</div>
+		<div id="mask" style="width:100%;height:100%;position:absolute;background:rgba(0, 0, 0, 0.9);top:0;background-repeat:no-repeat;background-position:50%; ">
+			<div id="notice" class="bounceIn" align="center" style="background:rgba(255,255,255,1); border:1px solid red; position:relative; margin-top: 100px;"><p>&nbsp;&nbsp;<span class=""><b>NOTICE:</b></span> <br />Before start game,please open the Console first(more detail will print to Console),then click the Start button to start game! <br />Or just click Start button and wait the game end. </p><span class="close">[close]</span></div>
+			<div id="startgame" style="margin: 0 auto; position:relative; margin-top: 100px;" onclick="startgame();">Start Game</div>
+		</div>
+</body>
+</html>

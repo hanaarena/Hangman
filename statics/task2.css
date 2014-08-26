@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft Yahei";
+    min-width: 640px;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    margin-top: -260px;
+    left: 0;
+
+}
+
+#menu, .status, #wrapper, #submit, #startgame {
+    padding: 10px;
+}
+
+#menu > ul > li, #wrapper > ul >li, #results > ul > li {
+    float: left;
+    list-style: none;
+    margin-right: 21px;
+}
+#results > ul > li {
+    position: relative;
+    margin-top: -130px;
+}
+#initgame, #startguess, #submit, #result, #startgame {
+    width: 100%;
+ 
+    background: #f6543a;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startguess, #submit, #startgame {
+    background: #52f16c;
+}
+#startgame {
+    position: relative;
+    width: 94px;
+    height: 21px;
+    left: 10px;
+    margin-top: 160px;
+}
+#submit, #startgame {
+    position: relative;
+    width: 94px;
+    height: 21px;
+    left: 10px;
+    margin-top: 160px;
+}
+
+#result {
+    position: relative;
+    width: 94px;
+    height: 21px;
+    left: 10px;
+    margin-top: 160px;
+}
+
+#initgame:hover, #result:hover {
+    background: #fd6046;
+}
+
+#startguess:hover,#submit:hover, #startgame:hover {
+    background: #55fb70;
+}
+#startgame:active {
+    padding: 7px;
+}
+
+#wordstoguess {
+    display: none;
+    position: relative;
+    left: 50px;
+    text-align: center;
+}
+
+#notice p {
+    color: #333;
+}
+
+.close {
+    text-decoration: underline;
+    color: #fd142a;
+}
+.close:hover {
+    cursor: pointer;
+}
+
+.wordstoguessNum, .resultScore {
+    color: red;
+    font-size: 29px;
+}
